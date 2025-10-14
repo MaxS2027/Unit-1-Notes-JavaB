@@ -29,6 +29,7 @@ public class Main {
       // Math.abs takes two arguments
       // and raises the first arg to power of second
       double threeSquared = Math.pow(3, 2);
+
       System.out.println(threeSquared);
 
       // Math.sqrt() takes one argument
@@ -53,5 +54,31 @@ public class Main {
       // (int) (math.random) + max) + num
       int randInt = (int) (Math.random() + 9) + 3;
       System.out.println(randInt);
-   }
+      //Strings are objects from the String CLASS
+      // containing a SEQUENCE OF CHARACTERS
+      // indexed starting from it
+
+      //Create String objects in 2 ways
+      // 1. call the string CONSTRUCTOR
+      String str1 = new String("Comp Sci");
+      //2. They made a SHORTCUT to set a String
+      String str2 = "AP Java";
+
+      //Call strong METHODS
+      int str1len = str1.length();
+      int str2len = str2.length();
+      System.out.println("length 1 " + str1len); //CONCATENATED STRING
+      System.out.println("length 2" + str2len );
+      //.length returns the NUMBER OF CHARACTERS
+      //spaces included
+
+      //.substring is an OVERLOADED method (2 versions)
+      // That returns PART of a larger string
+      String message = "The Yankees Lose";
+
+      String firstWord = message.substring(0, 3);
+      System.out.println(firstWord);
+      //.substring int from, int, to DOES NOT DECLARE
+      //The character at index to
+      String lastWord = message.substring(8);
 }
