@@ -81,4 +81,30 @@ public class Main {
       //.substring int from, int, to DOES NOT DECLARE
       //The character at index to
       String lastWord = message.substring(8);
+
+      // .index of returns an int
+      //the first index of the string youre entering in
+
+      String message1 = "This is cool";
+      String message2 = "This is not cool";
+
+      int indexOfNot1 = message1.indexOf("not");
+      int indexOfNot2 = message2.indexOf("not");
+
+      System.out.println("Index of not in message1 " +indexOfNot1);
+      System.out.println("Index of not in message2 "+ indexOfNot2);
+      //.equals() allows you to compare the contents of string objects
+      //checks evert cgaracter then returns boolean answer
+      boolean areTheyEqual = message1.equals(message2);
+      System.out.println("Does message 1 equal message 2?v " + areTheyEqual);
+      // order does not matter
+      System.out.println(areTheyEqual);
+      areTheyEqual = message1.equals("This is cool");
+      System.out.println(areTheyEqual);
+
+      //.compare compares two strings character by character
+      System.out.println(message1.compareTo("2"));
+      System.out.println(message1.compareTo("T"));
+      System.out.println(message1.compareTo("A"));
+}
 }
